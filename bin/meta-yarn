@@ -12,6 +12,7 @@ program
   .command('install', 'yarn install meta and child repositories')
   .command('link [--all]', 'yarn link child repositories where used within child and meta repositories')
   .command('upgrade-linked <version>', 'upgrades linked repositories with the provided version/commit')
+  .command('version <version>', 'yarn version child repositories with provided version number')
   .parse(process.argv);
 
 loaded = true;
